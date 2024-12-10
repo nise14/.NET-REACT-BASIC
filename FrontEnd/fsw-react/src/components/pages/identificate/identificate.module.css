@@ -1,0 +1,68 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contentForm{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.form{
+    background-color: rgb(46,81,175);
+    border:1px solid blue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px darkblue;
+    display: grid;
+    padding: 5px;
+    width: 300px;
+    height: auto;
+    grid-template:
+        "lblUser"       "txtUser"       30px
+        "lblPassword"   "txtPassword"   30px
+        "buttons"       "buttons"       30px;
+}
+
+.form>div>label{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.form>div>button{
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    font-weight: bold;
+    width: 100px;
+    cursor: pointer;
+}
+
+.lblUser{
+    grid-area: lblUser;
+}
+
+.txtUser{
+    grid-area: txtUser;
+}
+
+.lblPassword{
+    grid-area: lblPassword;
+}
+
+.txtPassword{
+    grid-area: txtPassword;
+}
+
+.buttons{
+    grid-area: buttons;
+    display: flex;
+    justify-content: space-around;
+}

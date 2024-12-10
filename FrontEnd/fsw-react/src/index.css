@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: 'Roboto';
+  background-color: white;
+  min-width: 50vw;
+  min-height: 50vw;
+  color: darkgray;
+  display: grid;
+  gap: 5px;
+  grid-template:
+    "header" 100px
+    "navbar" 30px
+    "main" auto
+    "footer" 50px;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo {
+  width: 100px;
+  height: 100px;
+
+}
+
+.header .title {
+  font-family: fantasy;
+  font-size: 5rem;
+  color: rgb(46, 81, 175);
+  text-shadow: 0px 3px 0px #1507af,
+    5px 5px 10px rgba(207, 8, 8, 0.323) 5px 15px 20px rgba(207, 8, 8, 0.323);
+}
+
+.header .user>img {
+  border: 3px solid rgb(46, 81, 175);
+  border-radius: 3rem;
+}
+
+.header .user>div {
+  color: rgb(46, 81, 175);
+  font-size: medium;
+  font-weight: bold;
+}
+
+.header .user>div:hover{
+  color:#1507af;
+  cursor: pointer;
+}
+
+.navbar{
+  grid-area: navbar;
+  background-color: rgb(46, 81, 175);
+  border-radius: 1rem;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  background-color: rgb(46,81,175);
+  color:white;
+  font-size: small;
+  align-items: center;
+  justify-content: center;
+}
